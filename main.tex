@@ -3,24 +3,24 @@
 
 \author{Ethan Mahintorabi, Evan Conrad, Carter Riley}
 \date{4/21/2017}
-\title{Disabilites and their effect on Transportation Kiosks}
+\title{Disabilities and their effect on Transportation Kiosks}
 
 \begin{document}
     \maketitle
 
     \begin{abstract}
         In our research we found that there are 60,000 people who are legally
-        blind acording to a survey done by the city of New York\cite{BLIND}. This
-        represents 0.07\% of New York City's population acording to a 2016 estimate of
-        the population\cite{CENCUS_ESTIMATE}. In this paper we will dicuss alternate
-        user interface types and interactions to help better accomodate the large percentage
+        blind according to a survey done by the city of New York\cite{BLIND}. This
+        represents 0.07\% of New York City's population according to a 2016 estimate of
+        the population\cite{CENCUS_ESTIMATE}. In this paper we will discuss alternate
+        user interface types and interactions to help better accommodate the large percentage
         of New Yorkers who have some kind of visual impairment
     \end{abstract}
 
     \section{Categories of Visual Impairment}
-        \paragraph{Partialy Sighted}
+        \paragraph{Partially Sighted}
                 This class of visual impairment is characterized by some kind of vision
-            loss resulting in the need for some kind of visual accomodations.\cite{VISAUL_IMPAIRMENT_DEF}
+            loss resulting in the need for some kind of visual accommodations.\cite{VISAUL_IMPAIRMENT_DEF}
         \paragraph{Low Vision}
             ``Generally refers to a severe visual impairment,
             not necessarily limited to distance vision. Low vision
@@ -35,23 +35,23 @@
             20/200 vision in the better eye or a very limited field of
             vision (20 degrees at its widest point)''\cite{VISAUL_IMPAIRMENT_DEF}
         \paragraph{Totally Blind}
-            No visual sense information is avalible to a person.\cite{VISAUL_IMPAIRMENT_DEF}
+            No visual sense information is available to a person.\cite{VISAUL_IMPAIRMENT_DEF}
 
     \section{Challenges for the Visually Impaired}
-        The visually imparied have a number of challenges they deal with in their 
+        The visually impaired have a number of challenges they deal with in their 
         daily lives that effect what they can and cannot do. West et al. performed a study
-        to find out to what extent visual impairement has on daily activities. The study found
-        specific tasks that become very difficut for those with visual impariment. Some of these
+        to find out to what extent visual impairment has on daily activities. The study found
+        specific tasks that become very difficult for those with visual impairment. Some of these
         tasks include plug insertion, key insertion, and dialing a phone\cite{doi:10.1001/archopht.120.6.774}. 
-        These tasks are generalized to spatial awareness which appears to be heavliy impacted by visual impairment.
-        Subjects in this test were also asked to read printed text which was also heavliy affected by their
+        These tasks are generalized to spatial awareness which appears to be heavily impacted by visual impairment.
+        Subjects in this test were also asked to read printed text which was also heavily affected by their
         visual impairment.
 
 
-    \section{Interface Accomodations}
+    \section{Interface Accommodations}
         \subsection{Spatial Identification}
             \paragraph{Kiosk Location} In our research we found that many of that visual impairment affects the 
-            ability to place opjects in a spatial enviroment like placing keys in a key hole or in our case
+            ability to place objects in a spatial environment like placing keys in a key hole or in our case
             locating the ticket kiosk. We propose adding a theremin directly under the kiosk machine so that
             support cane users can find the machine by moving their support cane close to the machine. When this
             happens they will hear a different tones as they get closer to the machine.
@@ -66,8 +66,8 @@
                 kiosk or a credit card of some kind. \textbf{As a solution to this problem we propose adding the
                 same kind of thermin around the location of the payment collection parts of the kiosk.} 
 
-            \paragraph{General Accomodations}
-                We plan to add a zooming feature to our interface to help accomadte those who still have some ablity
+            \paragraph{General Accommodations}
+                We plan to add a zooming feature to our interface to help accommodate those who still have some ability
                 to see contrast or large letters. Recent versions of Google Chrome have an ability to smoothly zoom
                 in an interface. Adding a read a loud feature is also a requirement for the revised interface.
 
@@ -75,11 +75,12 @@
     \section{Revised Use Case}
         \subsection{Main Path}
         \begin{enumerate}
-            \item User selects either a ``One Time Pass'' or ``Multi-day pass''
+            \item User is given the option to use a speak aloud interface
+            \item User can either a ``One Time Pass'' or ``Multi-day pass''
             \item The selects one of the two options.
             \item The system will prompt the user to select a destination in the
             case of the one time pass.
-            \item Once a destionation is entered into the system. The system will display
+            \item Once a destination is entered into the system. The system will display
             a total for the user.
             \item The can input cash, credit or debit.
             \item The transaction is completed, and the system will ask if the user
@@ -88,16 +89,40 @@
         \end{enumerate}
 
         \subsection{Alternative Paths}
-            \begin{enumerate}
-                \item The user places their New York City transport pass on the
+            \subsubsection{User Pass Options}
+                1. The user places their New York City transport pass on the
                 card reader 
                     \begin{enumerate}
+                        \setcounter{enumi}{1}
+
                         \item The system will display the amount of credit on the card and the multiday 
                         pass expiration dates. The system will also give the user an option to refill the
                         credit on their card or add a day pass.
+                        \item The user chooses one of the two options
+                        \item The user inputs how much credit they would like to add to their card.
+                        \item The system will prompt the user for payment
+                        \item They system will collect payment
+                        \item The user will confirm and leave the kiosk.
                     \end{enumerate}
-            \end{enumerate}
 
+            \subsubsection{Multiday pass actions}
+            1.3 The selects ``Multiday pass'' and the user is prompted to select 7--day, 30--day or a
+            1--pass.
+                \begin{enumerate}
+                    \setcounter{enumi}{3}
+                    \item The user selects one of the passes and the system will prompt the user
+                    for payment.
+                    \item The system will collect payment.
+                    \item The user will confirm and leave.
+                \end{enumerate}
+
+    \section{Conclusions}
+        We found in our report that there were many different forms of visual impairment that could
+        prevent a user from using our original interface adequately. Thus we proposed three key additions
+        that would accommodate those users. First we will implement sound based markers to help the our users
+        with total vision loss locate the kiosks. Second we will be adding a speak a loud option to help 
+        users with both total vision loss as well as our other low vision users. Third we plan to add the option
+        to zoom in on any part of the interface to users with poor vision to navigate the kiosk interface.
     \newpage
 
     \bibliography{sources} 
